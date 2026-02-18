@@ -2,11 +2,12 @@ The point of these 2 tasks it to practice parallelization over vector only using
 
 -> Task 1:
   - Given two n-dimensional vectors, A and B, the cosine similarity is a real value in the range [-1, 1] computed as follows:
-    $$
-      s(A, B) = \frac{A \cdot B}{\|A\| \, \|B\|}
-      = \frac{\sum_{i=1}^{n} a_i b_i}
-      {\sqrt{\sum_{i=1}^{n} a_i^2} \, \sqrt{\sum_{i=1}^{n} b_i^2}}
-    $$
+   ```math
+    s(A, B) = \frac{A \cdot B}{\|A\| \, \|B\|}
+    = \frac{\sum_{i=1}^{n} a_i b_i}
+    {\sqrt{\sum_{i=1}^{n} a_i^2} \, \sqrt{\sum_{i=1}^{n} b_i^2}}
+   ```
+
   - Cosine similarity is a measure used to quantify how similar two real-valued vectors of the same dimension are. In information retrieval, for instance, documents can be represented as vectors whose elements contain scores associated with specific terms from a given
     dictionary. Each score reflects how representative a term is for the corresponding document. Cosine similarity is then used to measure the degree of similarity between two documents.
   - The vectorized version implemented can be found in the vector.hpp file, with it automatically adapting to the compilation target, using compiler defined-macros to select the highest-performance available vectorization extenstion (e.g. AVX, SSE) and falling back to the
