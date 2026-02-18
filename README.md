@@ -1,4 +1,4 @@
-The point of these 2 tasks it to practice parallelization over vector only using intrinsic functions based on the set of vector instructions available on the CPU.
+Here are 2 lab tasks that show use of vectorization using intel intrinisic functions.
 
 -> Task 1:
   - Given two n-dimensional vectors, A and B, the cosine similarity is a real value in the range [-1, 1] computed as follows:
