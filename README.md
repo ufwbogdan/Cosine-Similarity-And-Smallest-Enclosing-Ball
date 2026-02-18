@@ -1,4 +1,4 @@
-Cosine similarity and smallest enclosing ball problems using intel intrinsic functions in C.
+Cosine similarity and smallest enclosing ball problems using intel intrinsic functions in C++.
 
 -> Task 1:
   - Given two n-dimensional vectors, A and B, the cosine similarity is a real value in the range [-1, 1] computed as follows:
